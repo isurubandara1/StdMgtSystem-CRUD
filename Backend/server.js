@@ -12,6 +12,10 @@ mysql.createConnection({
     database: "StdMgtSystem"
 })
 
+app.get("/", (req, res)=>{
+    res.json("Helloo from Backend");
+})
+
 app.listen(8081, ()=>{
     console.log("listening");
 })
