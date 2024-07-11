@@ -55,9 +55,9 @@
     background-color: #f9f9f9;
 }
 
-.students-list tr:hover {
+/* .students-list tr:hover {
     background-color: #f1f1f1;
-}
+} */
 .edit-button, .delete-button {
     padding: 8px 12px;
     font-size: 14px;
