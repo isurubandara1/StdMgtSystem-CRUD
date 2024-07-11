@@ -37,41 +37,15 @@ function Home() {
     };
 
     const updateStudent = async (id) => {
-        const updateChoice = prompt('Enter "name" to update the name, "email" to update the email, or "both" to update both:').toLowerCase();
-        let newName = '';
-        let newEmail = '';
-        
-        if (updateChoice === 'name' || updateChoice === 'both') {
-            newName = prompt('Enter new name:');
-        }
-        
-        if (updateChoice === 'email' || updateChoice === 'both') {
-            newEmail = prompt('Enter new email:');
-        }
-
-        if (updateChoice === 'name' && newName) {
-            try {
-                await axios.put(`http://localhost:8081/students/${id}`, { name: newName });
-                fetchStudents();
-            } catch (error) {
-                console.error("There was an error updating the student!", error);
-            }
-        } else if (updateChoice === 'email' && newEmail) {
-            try {
-                await axios.put(`http://localhost:8081/students/${id}`, { email: newEmail });
-                fetchStudents();
-            } catch (error) {
-                console.error("There was an error updating the student!", error);
-            }
-        } else if (updateChoice === 'both' && newName && newEmail) {
+        const newName = prompt('Enter new name:');
+        const newEmail = prompt('Enter new email:');
+        if (newName || newEmail) {
             try {
                 await axios.put(`http://localhost:8081/students/${id}`, { name: newName, email: newEmail });
                 fetchStudents();
             } catch (error) {
                 console.error("There was an error updating the student!", error);
             }
-        } else {
-            alert("Invalid input or cancelled operation.");
         }
     };
 
