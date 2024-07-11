@@ -69,19 +69,31 @@ function Home() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                 />
-                <button onClick={addStudent}>Add Student</button>
+                <button className="add-button" onClick={addStudent}>Add Student</button>
             </div>
             <div className="students-list">
                 <h2>Students List</h2>
-                <ul>
-                    {students.map((student) => (
-                        <li key={student.id}>
-                            {student.name} ({student.email})
-                            <button onClick={() => updateStudent(student.id)}>Edit</button>
-                            <button onClick={() => deleteStudent(student.id)}>Delete</button>
-                        </li>
-                    ))}
-                </ul>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {students.map((student) => (
+                            <tr key={student.id}>
+                                <td>{student.name}</td>
+                                <td>{student.email}</td>
+                                <td>
+                                    <button className="edit-button" onClick={() => updateStudent(student.id)}>Edit</button>
+                                    <button className="delete-button" onClick={() => deleteStudent(student.id)}>Delete</button>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
             </div>
         </div>
     );

@@ -1,38 +1,87 @@
 .Home {
     text-align: center;
+    padding: 20px;
+}
+
+.form {
+    margin-bottom: 20px;
 }
 
 .form input {
     margin: 5px;
-    padding: 8px;
+    padding: 10px;
     font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
 }
 
-.form button {
+.add-button {
     margin: 5px;
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-button:hover {
+    background-color: #218838;
+}
+
+.students-list {
+    margin-top: 20px;
+}
+
+.students-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+
+.students-list th, .students-list td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.students-list th {
+    background-color: #f2f2f2;
+    color: black;
+}
+
+.students-list tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.students-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+.edit-button, .delete-button {
     padding: 8px 12px;
     font-size: 14px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
+    margin: 0 5px;
 }
 
-.students-list ul {
-    list-style-type: none;
-    padding: 0;
+.edit-button {
+    background-color: #ffc107;
+    color: white;
 }
 
-.students-list li {
-    margin: 10px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.edit-button:hover {
+    background-color: #e0a800;
 }
 
-.students-list button {
-    margin-left: 10px;
-    padding: 6px 12px;
-    font-size: 12px;
-    cursor: pointer;
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
 }
