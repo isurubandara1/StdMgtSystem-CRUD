@@ -1,6 +1,32 @@
 .Home {
     text-align: center;
     padding: 20px;
+    position: relative;
+    min-height: 100vh;
+    background: url('./assets/bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjusted opacity */
+    z-index: 1;
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+
+.content h1{   
+    color: white;
 }
 
 .form {
@@ -34,6 +60,10 @@
     margin-top: 20px;
 }
 
+.students-list h1{
+    color: white;
+}
+
 .students-list table {
     width: 100%;
     border-collapse: collapse;
@@ -52,7 +82,7 @@
 }
 
 .students-list tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #1f0707;
 }
 
 /* .students-list tr:hover {
@@ -68,12 +98,12 @@
 }
 
 .edit-button {
-    background-color: #ffc107;
+    background-color: #e0a800; 
     color: white;
 }
 
 .edit-button:hover {
-    background-color: #e0a800;
+    background-color: #ffc107;
 }
 
 .delete-button {
