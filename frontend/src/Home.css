@@ -74,7 +74,7 @@
 }
 
 .students-list tr:nth-child(even) {
-    background-color: #f9f9f9;
+    background-color: #1f0707;
 }
 
 /* .students-list tr:hover {
@@ -90,12 +90,12 @@
 }
 
 .edit-button {
-    background-color: #ffc107;
+    background-color: #e0a800; 
     color: white;
 }
 
 .edit-button:hover {
-    background-color: #e0a800;
+    background-color: #ffc107;
 }
 
 .delete-button {
