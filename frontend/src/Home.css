@@ -60,6 +60,10 @@
     margin-top: 20px;
 }
 
+.students-list h1{
+    color: white;
+}
+
 .students-list table {
     width: 100%;
     border-collapse: collapse;
