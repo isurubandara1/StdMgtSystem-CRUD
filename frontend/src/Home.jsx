@@ -78,7 +78,6 @@ function Home() {
                     <button className="add-button" onClick={addStudent}>Add Student</button>
                 </div>
                 <div className="students-list">
-                    <h2>Students List</h2>
                     <table>
                         <thead>
                             <tr>
