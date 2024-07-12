@@ -1,4 +1,3 @@
-// src/Home.js
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './Home.css';
@@ -60,45 +59,48 @@ function Home() {
 
     return (
         <div className="Home">
-            <h1>Student Management System</h1>
-            <div className="form">
-                <input
-                    type="text"
-                    placeholder="Name"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                />
-                <input
-                    type="email"
-                    placeholder="Email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
-                />
-                <button className="add-button" onClick={addStudent}>Add Student</button>
-            </div>
-            <div className="students-list">
-                <h2>Students List</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Email</th>
-                            <th>Actions</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {students.map((student) => (
-                            <tr key={student.id}>
-                                <td>{student.name}</td>
-                                <td>{student.email}</td>
-                                <td>
-                                    <button className="edit-button" onClick={() => updateStudent(student.id)}>Edit</button>
-                                    <button className="delete-button" onClick={() => deleteStudent(student.id)}>Delete</button>
-                                </td>
+            <div className="overlay"></div>
+            <div className="content">
+                <h1>Student Management System</h1>
+                <div className="form">
+                    <input
+                        type="text"
+                        placeholder="Name"
+                        value={name}
+                        onChange={(e) => setName(e.target.value)}
+                    />
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                    />
+                    <button className="add-button" onClick={addStudent}>Add Student</button>
+                </div>
+                <div className="students-list">
+                    <h2>Students List</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Actions</th>
                             </tr>
-                        ))}
-                    </tbody>
-                </table>
+                        </thead>
+                        <tbody>
+                            {students.map((student) => (
+                                <tr key={student.id}>
+                                    <td>{student.name}</td>
+                                    <td>{student.email}</td>
+                                    <td>
+                                        <button className="edit-button" onClick={() => updateStudent(student.id)}>Edit</button>
+                                        <button className="delete-button" onClick={() => deleteStudent(student.id)}>Delete</button>
+                                    </td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     );
