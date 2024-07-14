@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/StdMgtSystem-CRUD/static/css/main.38e7fb89.css",
+    "main.js": "/StdMgtSystem-CRUD/static/js/main.f36dd3ce.js",
+    "static/js/453.8ab44547.chunk.js": "/StdMgtSystem-CRUD/static/js/453.8ab44547.chunk.js",
+    "static/media/bg.jpg": "/StdMgtSystem-CRUD/static/media/bg.916a503b5d5066864add.jpg",
+    "index.html": "/StdMgtSystem-CRUD/index.html",
+    "main.38e7fb89.css.map": "/StdMgtSystem-CRUD/static/css/main.38e7fb89.css.map",
+    "main.f36dd3ce.js.map": "/StdMgtSystem-CRUD/static/js/main.f36dd3ce.js.map",
+    "453.8ab44547.chunk.js.map": "/StdMgtSystem-CRUD/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.38e7fb89.css",
+    "static/js/main.f36dd3ce.js"
+  ]
+}
