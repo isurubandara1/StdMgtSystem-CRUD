@@ -13,7 +13,7 @@ This application is a straightforward student management system where students c
 
 - **Frontend:**
   - **React:** Framework for building the user interface.
-  - **CSS:** For styling and layout.
+  - **CSS:** styling and layout.
 
 - **Backend:**
   - **Node.js:** JavaScript runtime for the backend.
