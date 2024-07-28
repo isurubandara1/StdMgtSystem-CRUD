@@ -26,5 +26,5 @@ This application is a straightforward student management system where students c
 Before you begin, ensure you have the following installed:
 
 - **Node.js** (>=14.0.0)
-- **npm** (>=6.0.0) or **Yarn** (>=1.22.0)
+- **npm** (>=6.0.0) 
 
