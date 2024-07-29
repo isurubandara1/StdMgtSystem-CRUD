@@ -4,7 +4,7 @@ This application is a straightforward student management system where students c
 
 ## Features
 
-- **Add Student:** Users can add new student records with their name and email.
+- **Add Student:** Users can add new student records with name and email.
 - **Update Student:** Users can update existing student records.
 - **Delete Student:** Users can remove student records.
 - **View Students:** Users can view a list of all student records.
